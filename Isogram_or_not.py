@@ -1,12 +1,7 @@
-str=input()
-flag=0
-for c in str:
-    if(str.count(c)>1):
-        flag=1
+s=input()
+for i in s:
+    if s.count(i)>1:
+        print("False")
         break
-if(flag==0):
-    print("True")
 else:
-    print("False")
-        
-   
+    print("True")
