@@ -3,15 +3,13 @@ def prime(n):
         return 0
     else:
         for i in range(2,int(n**0.5)+1):
-            if(n%i==0):
+            if n%i==0:
                 return 0
                 break
-        return 1
-        
-    
+    return 1
 a=int(input())
 b=int(input())
-for n in range(a,b+1):
-    if(prime(n)==1):
-        print(n)
-    n=n+1
+c=0
+for i in range(a,b+1):
+    if(prime(i)==1):
+        print(i)
