@@ -1,6 +1,5 @@
-n=list(map(str,input().split()))
-d=[]
-for i in n:
-    d.append(i)
-k=d.pop()
-print(k[0])
+s=input().split()
+m=s[len(s)-1]
+print(m[0])
+
+    
