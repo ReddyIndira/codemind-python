@@ -1,7 +1,8 @@
-a=input()
-v="aeiouAEIOU"
-b=[]
-for i in a:
-    if i in v and i not in b:
-        b.append(i)
-print(*b)
+z=input()
+g="aeiouAEIOU"
+o=[]
+for i in z:
+    if i in g and not i in o:
+        o.append(i)
+print(*o)
+    
