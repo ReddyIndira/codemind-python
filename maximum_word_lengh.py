@@ -1,5 +1,5 @@
-s=list(map(str,input().split()))
-for i in range(len(s)):
-    s[i]=len(s[i])
-print(max(s))
-    
+s=input().split()
+c=[]
+for i in s:
+    c.append(len(i))
+print(max(c))
