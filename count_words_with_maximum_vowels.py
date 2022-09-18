@@ -1,17 +1,12 @@
-l=list(map(str,input().split()))
-c=0
-d=[]
-for i in l:
+def fun(i):
     c=0
     for j in i:
-        if j in "aeiouAEIOU":
-            c=c+1
-    d.append(c)
-dup=[]
-for i in d:
-    if(i==max(d)):
-        dup.append(i)
-print(len(dup))
-
-            
-            
+        if j in "aeiou":
+            c+=1
+    return c
+s=input().lower().split()
+o=[]
+for i in s:
+    p=fun(i)
+    o.append(p)
+print(o.count(max(o)))
