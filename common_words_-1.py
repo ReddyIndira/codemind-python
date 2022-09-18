@@ -1,9 +1,7 @@
-s1=input()
-s2=input()
-l1=list(s1.lower().split())
-l2=list(s2.lower().split())
+s1=input().lower().split()
+s2=input().lower().split()
 c=0
-for i in l1:
-    if i in l2:
+for i in s1:
+    if i in s2:
         c+=1
 print(c)
