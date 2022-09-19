@@ -1,7 +1,6 @@
-s=input().lower().split()
-for i in s:
-    if(i==i[::-1]):
-        print("True")
-        break
+s=input().lower()
+if(s==s[::-1]):
+    print("True")
 else:
     print("False")
+    
