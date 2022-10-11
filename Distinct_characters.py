@@ -1,11 +1,9 @@
-n=input()
-n=n.lower()
-k=set(n)
-k=list(k)
-k.sort()
-if (k.count(" ")>=1):
-    j=k.index(" ")
-    k.pop(j)
-k.sort()
-k="".join(k)
-print(k)
+s=input().lower()
+b=[]
+for i in range(len(s)):
+    if(s.count(s[i])==1) and s[i]!=" ":
+        b.append(s[i])
+c=sorted(b)
+for i in c:
+    print(i,end="")
+    
