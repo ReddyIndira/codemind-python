@@ -1,12 +1,8 @@
-n=input()
-n=n.lower()
-k=set(n)
-k=list(k)
-if(k.count(" ")>=1):
-    j=k.index(" ")
-    k.pop(j)
-    print(len(k))
-else:
-    print(len(k))
-
-  
+s=input().lower()
+t=[]
+c=0
+for i in s:
+    if i not in t and i!=" ":
+        t.append(i)
+        c+=1
+print(c)
