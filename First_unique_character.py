@@ -1,8 +1,15 @@
-n=input()
-n=list(n)
-for i in range(len(n)):
-    if(n.count(n[i])==1):
-        print(n[i])
+s=input()
+b=[]
+c=0
+for i in range(len(s)):
+    if(s.count(s[i])==1):
+        b.append(s[i])
+        c+=1
         break
-else:
+if(c==0):
     print("-1")
+else:
+    print(*b)
+
+    
+        
