@@ -9,4 +9,4 @@ for i in s2:
         c.append(i)
 c=sorted(c)
 for i in c:
-    print(i,end='')
+    print(i,end="")
