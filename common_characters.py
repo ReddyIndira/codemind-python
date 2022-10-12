@@ -1,20 +1,16 @@
-a=input().lower()
-b=input().lower()
-l=list(set(a)&set(b))
-s=''
+s1=input().lower()
+s2=input().lower()
 c=0
+s=''
+l=list(set(s1)&set(s2))
 for i in l:
-    if i==" ":
+    if i==' ':
         continue
     s+=i
     c=1
 x=sorted(s)
-if(c==0):
-    print("-1")
+if c==0:
+    print('-1')
 else:
     for i in x:
-        print(i,end="")
-
-
-
-    
+        print(i,end='')
