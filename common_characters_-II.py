@@ -1,12 +1,9 @@
 s1=input().lower()
 s2=input().lower()
-c=0
-s=''
-l=list(set(s1)&set(s2))
-for i in l:
-    if i==' ':
-        continue
-    s+=i
-    c=1
-x=sorted(s)
-print(len(x))
+c=[]
+d=0
+for i in s1:
+    if i in s2 and i not in c and i!=" ":
+        c.append(i)
+        d+=1
+print(d)
