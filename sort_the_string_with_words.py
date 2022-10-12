@@ -1,5 +1,3 @@
-n=input()
-s=n.split()
-s.sort()
+a=list(map(str,input().split()))
+s=sorted(a)
 print(*s)
-    
