@@ -1,10 +1,10 @@
-a,b=list(map(int,input().split()))
-h=list(map(int,input().split()))
-m=list(map(int,input().split()))
-l=set(h)
-n=set(m)
+a,b=map(int,input().split())
+arr=list(map(int,input().split()))
+brr=list(map(int,input().split()))
 c=0
-for i in l:
-    if i in n:
-       c+=1
+d=[]
+for i in arr:
+    if i in brr and i not in d:
+        d.append(i)
+        c+=1
 print(c)
