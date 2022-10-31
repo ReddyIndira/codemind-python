@@ -1,8 +1,8 @@
 n=int(input())
-a=list(map(int,input().split()))
+arr=list(map(int,input().split()))
 s=0
-for i in a:
-    while i:
+for i in arr:
+    while(i):
         d=i%10
         s=s+d
         i=i//10
